@@ -21,7 +21,7 @@ services:
     networks:
       - todoapp-net
     depends_on:
-      - mysq
+      - mysql
     restart: unless-stopped
   mysql:
     image: mysql-local:1.0.0
