@@ -17,11 +17,11 @@ services:
       - USER=${USER}
       - PASSWORD=${PASSWORD}
       - HOST=${HOST}
-      - PORTS=${PORT}
+      - PORT=${PORT}
     networks:
       - todoapp-net
     depends_on:
-      - mysql
+      - mysq
     restart: unless-stopped
   mysql:
     image: mysql-local:1.0.0
